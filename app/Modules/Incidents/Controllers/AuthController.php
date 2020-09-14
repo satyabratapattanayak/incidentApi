@@ -51,7 +51,7 @@ class AuthController
                         'status' => 1,
                         'message' => "Token Created Successfully",
                         'jwt_token' => $jwt,
-                        'expired_at' => $token['exp'],
+                        'expired_at' => date('Y-m-d', $token['exp']),
                     ];
             	}
             }

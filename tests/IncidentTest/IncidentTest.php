@@ -10,9 +10,14 @@ class IncidentTest extends TestCase
 
     protected function setUp()
     {
-        $this->client = new GuzzleHttp\Client([
-            'base_uri' => 'http://localhost'
-        ]);
+        $this->client = new GuzzleHttp\Client(
+            [
+                'base_uri' => 'http://localhost',
+                'headers' => [
+                    'token' => trim('Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbkBnbWFpbC5jb20iLCJhdWQiOiJhdWRpZW5jZSIsImlhdCI6MTYwMDA1NDExMCwiZXhwIjoxNjAwMzEzMzEwfQ.YWDRVgxaRb1B4hAiuYx0bypDiJ8md2jPYT-6qYF8LTQ'),
+                ]
+            ]
+        );
     }
     
     /**
