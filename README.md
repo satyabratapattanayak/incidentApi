@@ -20,14 +20,16 @@
 4. Change the DB settings inside the api/config/settings.php file.
 
 ## Functionality:
-- I am using Jwt for the validation process of the apis. If we will hit the apis with no token then it will show token missmatch error. So to run the api we need to generate the jwt token first, with the credentials (email => admin@gmail.com, password => password).
+- I am using Jwt for the validation process of the apis. If we will hit the apis with no token then it will show token missmatch error. So to run the api we need to generate the jwt token first, with the credentials (email => admin@gmail.com, password => Password@123).
 
 ## Process: 
-1. Create the jwt token with the credentials. Need to pass the  token in header for other apis to work.
+1. Create the jwt token with the credentials. Need to pass the  token in header for other apis to work. token creation api:
+	- http://localhost/<root_folder>/incident (POST) {It will create the token}
+	
 2. Bellow are the three end points that are there in the project along with the unit tests:
-	- http://localhost/api/incident/categories (GET) {It will fetch all the categories of the incident}
-	- http://localhost/api/incident (GET) {It will fetch all the incidents}
-	- http://localhost/api/incident (POST) {It will save an incident to the application}
+	- http://localhost/<root_folder>/incident/categories (GET) {It will fetch all the categories of the incident}
+	- http://localhost/<root_folder>/incident (GET) {It will fetch all the incidents}
+	- http://localhost/<root_folder>/login (POST) {It will save an incident to the application}
 	- For unit testing need to run 'vendor/bin/phpunit' in the command inside app.
 	
 ## Folder Structure:
