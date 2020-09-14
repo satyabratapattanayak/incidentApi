@@ -46,4 +46,44 @@
 	- Inside IncidentTest.php file I am writing 3 tests where 10 assertions are there and one failure is there along with 9 success.
 	
 ## Tree Structure:
-
+```
+📦api
+ ┣ 📂app
+ ┃ ┣ 📂Helpers
+ ┃ ┃ ┗ 📜helper.php
+ ┃ ┣ 📂Middlewares
+ ┃ ┃ ┗ 📜ValidateJWTToken.php
+ ┃ ┗ 📂Modules
+ ┃ ┃ ┗ 📂Incidents
+ ┃ ┃ ┃ ┣ 📂Controllers
+ ┃ ┃ ┃ ┃ ┣ 📜AuthController.php
+ ┃ ┃ ┃ ┃ ┗ 📜IncidentsController.php
+ ┃ ┃ ┃ ┣ 📂Models
+ ┃ ┃ ┃ ┃ ┣ 📜Category.php
+ ┃ ┃ ┃ ┃ ┣ 📜Incident.php
+ ┃ ┃ ┃ ┃ ┣ 📜Role.php
+ ┃ ┃ ┃ ┃ ┣ 📜User.php
+ ┃ ┃ ┃ ┃ ┗ 📜UserIncidentRel.php
+ ┃ ┃ ┃ ┣ 📂Routes
+ ┃ ┃ ┃ ┃ ┗ 📜routes.php
+ ┃ ┃ ┃ ┗ 📜index.php
+ ┣ 📂config
+ ┃ ┣ 📜autoload.php
+ ┃ ┣ 📜bootstrap.php
+ ┃ ┣ 📜constants.php
+ ┃ ┣ 📜database.php
+ ┃ ┣ 📜modules.php
+ ┃ ┗ 📜settings.php
+ ┣ 📂logs
+ ┃ ┣ 📜logs.json
+ ┃ ┗ 📜README.md
+ ┣ 📂tests
+ ┃ ┗ 📂IncidentTest
+ ┃ ┃ ┗ 📜IncidentTest.php
+ ┣ 📜.gitignore
+ ┣ 📜.htaccess
+ ┣ 📜composer.json
+ ┣ 📜composer.lock
+ ┣ 📜index.php
+ ┗ 📜phpunit.xml
+```
