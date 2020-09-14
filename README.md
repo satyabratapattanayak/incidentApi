@@ -15,21 +15,21 @@
 ## Installation Process:
 1. Clone the whole project to your local system.
 2. Open the cmd inside the root folder and run the bellow command.
-    $ composer update
-3. Create the database in your local system from the given basic_sql.
-4. Change the DB settings inside the api/config/settings.php file.
+   - $ composer update
+3. Create the database in your local system from the given basic_sql given in the root folder. (ER diagram is also given in the root.)
+4. Change the DB settings inside the api/config/database.php file.
 
 ## Functionality:
 - I am using Jwt for the validation process of the apis. If we will hit the apis with no token then it will show token missmatch error. So to run the api we need to generate the jwt token first, with the credentials (email => admin@gmail.com, password => Password@123).
 
 ## Process: 
 1. Create the jwt token with the credentials. Need to pass the  token in header for other apis to work. token creation api:
-	- http://localhost/<root_folder>/incident (POST) {It will create the token}
+	- http://localhost/<root_folder>/login (POST) {It will create the token}
 	
 2. Bellow are the three end points that are there in the project along with the unit tests:
 	- http://localhost/<root_folder>/incident/categories (GET) {It will fetch all the categories of the incident}
 	- http://localhost/<root_folder>/incident (GET) {It will fetch all the incidents}
-	- http://localhost/<root_folder>/login (POST) {It will save an incident to the application}
+	- http://localhost/<root_folder>/incident (POST) {It will save an incident to the application}
 	- For unit testing need to run 'vendor/bin/phpunit' in the command inside app.
 	
 ## Folder Structure:
@@ -45,7 +45,7 @@
 	- database.php file contain the database details. We can change the database details here.
 	- settings.php We can change the jwt validation here from true to false to disable jwt.
 3. Inside Tests Folder I am performing few unit tests.
-	- Inside IncidentTest.php file I am writing 3 tests where 10 assertions are there and one failure is there along with 9 success.
+	- Inside IncidentTest.php file I am writing 3 tests where 10 assertions are there and 1 failure is there along with 9 success.
 	
 ## Tree Structure:
 ```
