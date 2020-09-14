@@ -1,0 +1,35 @@
+{
+    "name": "spattanayak4you/slim-api",
+    "description": "A Custom Slim Framework by Tanmaya",
+    "keywords": [
+        "microframework",
+        "rest",
+        "router",
+        "psr7"
+    ],
+    "homepage": "http://www.google.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Satyabrata Pattanayak",
+            "email": "spattanayak4you@gmail.com",
+            "homepage": "http://www.google.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "firebase/php-jwt": "^5.0",
+        "illuminate/database": "5.1.16",
+        "slim/slim": "^3.1",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+        },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "app/",
+            "Helper\\": "app/Helpers/"
+        }
+    }
+}
