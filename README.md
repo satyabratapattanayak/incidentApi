@@ -32,6 +32,9 @@
 	- http://localhost/<root_folder>/incident (POST) {It will save an incident to the application}
 	- For unit testing need to run 'vendor/bin/phpunit' in the command inside app.
 	
+## Post parameters for saving incident:
+	 data:{"id":0,"location":{"latitude":12.9231501,"longitude":74.7818517},"title":"incident title","category":1,"people":[{"name":"Name of person","type":"staff"},{"name":"Name of person","type":"witness"},{"name":"Name of person","type":"staff"}],"comments":"This is a string of comments","incidentDate":"2020-09-01T13:26:00+00:00","createDate":"2020-09-01T13:32:59+01:00","modifyDate":"2020-09-01T13:32:59+01:00"}
+	
 ## Folder Structure:
 1. Inside app folder there are three folders:
 	- Helpers: It contains a helper.php file. It contains the common methods which are accessable throug out the Modules.
