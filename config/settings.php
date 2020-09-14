@@ -18,7 +18,7 @@ return [
         'addContentLengthHeader' => false, 
         'db' => $databaseSettings,
         // Enable or Disable JWT Authentication
-	    'do_load_jwt' => false,
+	    'do_load_jwt' => true,
 	    'jwt_secret' => "SgUkXp2s5v8y/B?E(H+MbQeThWmYq3t6w9z^C&F)J@NcRfUjXn2r4u7x!A%D*G-K",
 	    'show_exception' => true,
     ],
